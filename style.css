@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#009c3b,#002776);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    background:white;
+    width:500px;
+    max-width:100%;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 25px rgba(0,0,0,.3);
+}
+
+h1{
+    color:#009c3b;
+    margin-bottom:15px;
+}
+
+.imagem-site{
+    width:200px;
+    height:200px;
+    object-fit:contain;
+    border:4px solid #ffdf00;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.config{
+    text-align:left;
+    margin:15px 0;
+}
+
+.config label{
+    display:block;
+    margin:10px 0;
+    font-weight:bold;
+    color:#002776;
+}
+
+input[type="number"]{
+    width:100%;
+    padding:10px;
+    border:2px solid #009c3b;
+    border-radius:10px;
+}
+
+button{
+    background:#ffdf00;
+    color:#002776;
+    border:none;
+    padding:15px 25px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.senha{
+    margin-top:20px;
+    padding:15px;
+    background:#f2f2f2;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+    word-wrap:break-word;
+}
+
+.mensagem{
+    margin-top:15px;
+    color:#009c3b;
+    font-weight:bold;
+    font-size:18px;
+}
