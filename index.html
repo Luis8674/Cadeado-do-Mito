@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Segurança do Mito</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🛡️ Site de Segurança do Mito</h1>
+
+        <img src="imagem.png" alt="Imagem do Site" class="imagem-site">
+
+        <div class="config">
+
+            <label>
+                Tamanho da senha:
+                <input type="number" id="tamanho" min="4" max="50" value="16">
+            </label>
+
+            <label>
+                <input type="checkbox" id="maiusculas" checked>
+                Letras Maiúsculas (A-Z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="minusculas" checked>
+                Letras Minúsculas (a-z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="numeros" checked>
+                Números (0-9)
+            </label>
+
+            <label>
+                <input type="checkbox" id="simbolos" checked>
+                Símbolos (!@#$%&)
+            </label>
+
+        </div>
+
+        <button onclick="gerarSenha()">
+            Gerar Senha Segura
+        </button>
+
+        <div class="senha" id="resultado">
+            Sua senha aparecerá aqui
+        </div>
+
+        <div class="mensagem" id="mensagem"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
